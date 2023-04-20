@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body { /* corpo do codigo  */
+    font-family:'Poppins', sans-serif; /* representa a fonte para os elementos selecionados */
+    margin: 0; /* é o espaço externo do elemento */
+}
+
+
+
+header { /* representa o cabeçalho */
+    text-align:center; /* alinhamento de textp */
+    background-color: black; /* cor de fundo do elemento */
+    color: white; /* cor do elemento */
+    padding: 30px; /*  define uma a distância entre o conteúdo de um elemento e suas bordas */
+    width: 100; /*  determina a largura da área de conteúdo de um elemento */
+}
+ header h1 { /* representa o cabeçalho maior, o elemento mais visivel na página de um site */
+    font-size: 50px; /* é usada para indicar o tamanho da fonte */
+ }
+ nav ul { /* uma seção de links dentro da tag nav */
+    list-style-type: none; /* estilo de lista */
+    background-color: black;
+    overflow: hidden; /* serve para o conteúdo não ultrapasse dos limites de um elemento */
+    margin: 0;
+    padding: 0;
+ }
+ nav a { /* incluir o atributo href na tag nav */
+    color: white;
+    text-decoration: none; /* decorar o texto da pagina */
+    padding: 16px;
+    display: flex; /* é utilizada para indicar a forma como os elementos serão dispostos na página ou em espaços delimitados */
+ }
+nav li { /* representa uma lista dentro da tag nav */
+    float: left; /* determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr */
+}
+nav a:hover { /* onde o cursor do mouse passa por cima de algum elemento na página html, e com isso aplicamos estilos sobre a tag nav */
+    background-color: white;
+    color: black;
+}
+.banner { /* section da classe banner */
+    height: 100vh; /* altura do elemento */
+    background: linear-gradient(rgba(0,0,0,0.281), rgba(0,0,0,0.308)), url(img.1.jpg);
+    background-size: cover; /* define o tamanho da imagem de fundo do elemento */
+    background-position: center; /* define onde a imagem vai se estabelecer */
+    background-repeat: no-repeat; /* para a imagem nao se repetir */
+    display: flex;
+    align-items: center; /* alinha os intens dos elementos */
+    justify-content: center; /* onde justificar o conteúdo */
+    width: 100;
+}
+.texto .titulo { /* div texto */
+    color: white;
+    font-size: 50px;
+    font-weight: 600; /* seria a expressura da fonte */
+}
+
+.texto .botoes {  /* div botoes */
+    margin-top: 30px; /* indica o espaço acima do elemento */
+}
+.texto .botoes button { /* div botoes acompanhado de button para executar uma ação após um clique */
+height: 55px;
+width: 170px;
+border-radius: 5px; /* são bordas arredondas */
+border: 0; /* bordas dos elementos */
+margin: 0 10px;
+font-size: 20px;
+font-weight: 500;
+padding: 0 10px;
+cursor: pointer; /* onde o cursor do mouse pode mudar rapidamente para outro modelo */
+outline: none; /* para configurar o contorno da propriedade */
+transition: 0.3s; /* transições dos botoes */
+text-decoration: none;
+}
+.texto .botoes button.n-overlay { /* n-overlay para alterar a caixa de texto e bota o link */
+    color: white;
+    background: none;
+    border: 2px solid white;
+    text-decoration: none;
+}
+.texto .botoes button.n-overlay:hover { /* para executar um clique na ação */
+color: black;
+background-color: white;
+text-decoration: none;
+}
+
+.row {  /* div row para o formulario */
+    padding: 0 20px;
+    display: table;
+    width: 100%;
+}
+.card { /* div card */
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-width: 5px; /* largura da borda */
+}
+form { /* criando um formulario */
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px #999; /* sombra da caixa da borda */
+}
+input, textarea { /* controle da edição da caixa de texto */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em; /* a margin inferior */
+    font: 1em 'Poppins', sans-serif;
+}
+footer { /* determina o rodapé do site */
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+footer dl, footer p {  /* dentro do rodapé tem um paragrafo e uma lista com descrição */
+    display: table-cell;
+    vertical-align: middle; /* alinhamento vertical */
+}
+
+footer dt { /* indetifica os intens */
+    font-weight: bold;
+}
+footer dd { /* a descrição do elemento dt */
+    margin-left: 0; /* margem a esquerda */
+}
+footer p { /* paragrafo do rodapé */
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+}
+div p { /* div do paragrafo */
+    color: black;
+    font-size: 25px;
+    font-weight: 50;
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0 0px 0px #999;
+    font-family: 'Poppins', sans-serif;
+}
+section h1 { /* titulo da seção */
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-align:center;
+}
+table, th,td { /* marcamos uma tabela na pagina mostrando o th como cabeçalho da tabela e o td a descrição */
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+}
+th, td {
+padding:5px 10px;
+text-align: center;
+}
+th {
+    background-color: black;
+    color: white;
+}
+table tr:nth-child(odd) { /* definir a linha da tabela */
+background-color: white;
+color: black;
+}
+table tr:nth-child(even) {
+background-color: white;
+color: black;
+}
+table{
+    width: 100%;
+}
+section p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 50;
+}
+section h2 { /* subtitulo da seção */
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 50;
+    font-size: 35px;
+}
+div h4 { /* div com titulo */
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-align:center;
+}
+.box { /* determinando a cor de fundo da propriedade */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+fieldset { /* agrupa elementos dentro de um formulario */
+    border: 3px solid black;
+    border-width: 5px;
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+}
+legend { /* define uma legenda para o elemento */
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+button { /* botão clicável */
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
+}
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    nav ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}

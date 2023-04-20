@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbearia Style</title>
+</head>
+<body>
+<header>
+    <h1>BARBEARIA STYLE</h1>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="preços.html">PREÇOS</a></li>
+            <li><a href="agendamento online.html">AGENDAMENTO ONLINE</a></li>
+            <li><a href="https://www.youtube.com/watch?v=RkrUEnCUwdQ">CANAL NO YOUTUBE</a></li>
+        </ul>
+    </nav>
+</header>
+<form>
+    <fieldset action="form">
+            <legend>FAÇA SEU AGENDAMENTO</legend>
+            <br>
+        <div class="card">
+            <label for="inputnome">Nome:</label>
+            <input type="text" id="inputnome">
+        </div>
+        <div class="card">
+            <label for="inputemail">E-mail:</label>
+            <input type="text" id="inputemail">
+        </div>
+        <div class="card">
+            <label for="inputcontato">Contato:</label>
+            <input type="text" id="inputcontato">
+        </div>
+        <div class="card">
+            <p>QUAL CORTE VOCÊ VOCÊ DESEJA?</p>
+            <div class="card">
+                <label for="CORTE-radio">CORTE</label>
+                <input type="checkbox" id="CORTE-radio" name="CORTE" value="CORTE" required>
+        </div>
+        <br>
+        <div class="card">
+            <label for="BARBA-radio">BARBA</label>
+            <input type="checkbox" id="BARBA-radio" name="CORTE" value="BARBA" required>
+        </div>
+        <br>
+        <div class="card">
+            <label for="CORTE E BARBA-radio">CORTE E BARBA</label>
+            <input type="checkbox" id="CORTE E BARBA-radio" name="CORTE" value="CORTE E BARBA" required>
+        </div>
+        </div>
+                <div class="card">
+                <label for="">DATA DE AGENDAMENTO</label>
+                <input type="date" name="data_de_agendamento" id="data_de_agendamento"  required>
+            </div>
+    </fieldset>
+</form>
+<section>
+    <h1>HORARIOS DE FUNCIONAMENTO</h1>
+  </section>
+  <table>
+    <tr>
+        <th>DIAS</th>
+        <th>HORARIOS</th>
+    </tr>
+    <tr>
+        <td>SEGUNDA Á SEXTA</td>
+        <td>9:00 ÁS 20:00</td>
+    </tr>
+    <tr>
+        <td>SABADO</td>
+        <td>14:00 ÁS 18:00</td>
+    </tr>
+    <tr>
+        <td>DOMINGO</td>
+        <td>NÃO FUNCIONAMOS</td>
+    </tr>
+  </table>
+  <footer>
+    <dl>
+        <dt>E-mail</dt>
+        <dd>barbeariastyle@gmail.com</dd>
+        <br>
+        <dt>Contato</dt>
+        <dd>(71) 991122-3344</dd>
+    </dl>
+    <p>Barbearia style</p>
+</footer>
+</body>
+</html>
